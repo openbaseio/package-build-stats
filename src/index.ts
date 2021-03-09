@@ -5,4 +5,5 @@ export * from './getPackageExportSizes'
 
 // New
 export * from './utils/common.utils'
-export * as BuildUtils from './utils/build.utils'
+export {default as BuildUtils} from './utils/build.utils'
+export {default as InstallationUtils} from './utils/installation.utils'

@@ -11,7 +11,10 @@ import BuildUtils from './utils/build.utils'
 import { UnexpectedBuildError } from './errors/CustomError'
 import { GetPackageStatsOptions } from './common.types'
 
-function getPackageJSONDetails(packageName: string, installPath: string) {
+export function getPackageJSONDetails(
+  packageName: string,
+  installPath: string
+) {
   const packageJSONPath = path.join(
     installPath,
     'node_modules',
